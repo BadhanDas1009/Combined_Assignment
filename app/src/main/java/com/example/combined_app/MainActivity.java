@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button assignment_3;
     Button assignment_4;
     Button assignment_5;
+    Button assignment_6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         assignment_3 = findViewById(R.id.assignment_3);
         assignment_4 = findViewById(R.id.assignment_4);
         assignment_5 = findViewById(R.id.assignment_5);
+        assignment_6 = findViewById(R.id.assignment_6);
 
         assignment_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +65,16 @@ public class MainActivity extends AppCompatActivity {
         assignment_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Button Pressed", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, Assignment5.class);
+                startActivity(intent);
+            }
+        });
+        assignment_6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Assignment6.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Button Pressed", Toast.LENGTH_SHORT).show();
             }
         });
