@@ -45,7 +45,7 @@
             android:text="Assignment 2" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/assignment_3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

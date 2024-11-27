@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Combined_APP"
         tools:targetApi="31">
         <activity
-            android:name=".Assignment2"
+            android:name=".Assignment3"
             android:exported="false" />
         <activity
-            android:name=".Assignment3"
+            android:name=".Assignment2"
             android:exported="false" />
         <activity
             android:name=".Assignment1"
